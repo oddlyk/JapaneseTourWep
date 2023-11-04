@@ -1,0 +1,279 @@
+@charset "utf-8";
+/*각 화면의 CSS가 겹치는 부분이 많아 만들었으며, 한화면에서만 사용되는 css는 id를 사용하였다.*/
+/*헤더의 배경으로 이미지를 넣기 위한 class로 반복되지 않도록 하였다.*/
+.heder_image {
+	background-image: url(img/hujisan_heder.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 200px;
+	width: 1900px;
+	color: rgba(255,255,255,1.00);
+	background-position: 50% 0%;
+}
+/*헤더에 넣은 타이틀의 위치를 지정하기 위한 class로 타이틀이 헤더의 중앙에 오도록 하였다.*/
+.heder_capy {
+	color: rgba(255,255,255,1.00);
+	padding-top: 2%;
+	text-decoration: none;
+	text-shadow: 2px 1px rgba(177,177,177,1.00);
+	text-align: center;
+}
+/*네비게이션 바의 위치와 배경 색을 지정하기 위한 class*/
+.nebi {
+	width: 1900px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	top: 50%;
+	height: 25px;
+	background-color: rgba(184,188,255,1.00);
+	background-position: 50% 0%;
+	font-size: 20px;
+	font-family: "나눔바른고딕", "나눔고딕", "나눔스퀘어";
+	color: rgba(0,0,0,1.00);
+}
+/*네비게이션 바 내부의 [회사소개], [모아보기]의 위치를 지정하기 위한 class*/
+.nebi_side {
+	float: left;
+	text-align: center;
+	width: 270px;
+	margin-left: 221px;
+	margin-right: 221px;
+}
+/*네비게이션 바 내부의 [메인]의 위치를 지정하기 위한 class*/
+.nebi_main {
+	float: left;
+	text-align: center;
+	width: 270px;
+	margin-left: 102px;
+	margin-right: 102px;
+}
+/*네비게이션 바 부분 중 현재 화면에 해당하는 부분을 표시하기 위한 class로 버튼이 눌려있는 듯한 효과를 주기위해 배경을 조금 더 어둡게 하였다.*/
+.nebi_click{
+	width: 270px;
+	background-color: rgba(114,150,255,1.00);
+	color: rgba(255,255,255,1.00);
+}
+/*중앙에 내용이 들어갈 공간을 만들기 위한 class*/
+.main {
+	width: 1900px;
+	height: 1010px;
+	text-align: center;
+}
+/*중앙 부분의 양사이드의 크기를 지정하기 위한 class*/
+.main_side {
+	float: left;
+	width: 400px;
+	height: 1000px;
+}
+/*중앙 부분의 내용이 들어갈 공간의 크기를 지정하기 위한 class*/
+.main_mid {
+	float: left;
+	width: 1100px;
+	height: 1000px;
+}
+/*메인 부분의 우측에 들어갈 이미지를 배경으로 넣기 위한 class로 y축으로 반복되어 계속 이어지는 듯한 느낌을 주도록 하였다.*/
+.main_side_right_img {
+	background-image: url(img/main_right.jpg);
+	width: 400px;
+	height: 1000px;
+	background-size: 350px auto;
+	background-repeat: repeat-y;
+}
+/*[회사소개] 페이지의 메인 하단에 들어갈 정보의 위치를 지정하기 위한 id*/
+#company_exp {
+	font-family: "나눔명조", "함초롬바탕 확장B";
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+/*[메인] 페이지의 메인 상단에 들어갈 표 위치를 지정하기 위한 id*/
+#main_main_intro {
+	font-family: "나눔바른고딕", "나눔고딕", "나눔스퀘어";
+	text-align: center;
+	font-size: 17px;
+	width: 1100px;
+	margin-top: 10px;
+}
+/*[모아보기] 페이지의 메인 상단에 들어갈 롤오버이미지의 위치를 지정하기 위한 id*/
+#main_where_img_left {
+	height: 330px;
+	width: 340px;
+	margin-left: 40px;
+	margin-right: 720px;
+	text-align: center;
+}
+/*[모아보기] 페이지의 메인 중앙에 들어갈 롤오버이미지의 위치를 지정하기 위한 id*/
+#main_where_img_mid {
+	height: 330px;
+	width: 340px;
+	margin-left: 380px;
+	margin-right: 380px;
+	text-align: center;
+}
+/*[모아보기] 페이지의 메인  하단에 들어갈 롤오버이미지의 위치를 지정하기 위한 id*/
+#main_where_img_right {
+	height: 330px;
+	width: 340px;
+	margin-left: 720px;
+	margin-right: 40px;
+	text-align: center;
+}
+/*footer부분의 공간과 배경을 지정하기 위한 class*/
+.footer {
+	font-family: "나눔명조", "함초롬바탕 확장B";
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	height: 200px;
+	width: 1880px;
+	background-color: rgba(223,223,223,1.00);
+	margin-top: 10px;
+	padding-top: 20px;
+	border-radius: 10px 10px 20px 20px;
+}
+/*footer부분에 들어갈 회사 로고의 위치를 지정하기 위한 class*/
+.footer_img {
+	margin-left: 100px;
+	height: auto;
+	width: 150px;
+	float: left;
+}
+/*footer부분에 들어갈 회사 정보의 위치를 지정하기 위한 class*/
+.footer_imfo {
+	float: left;
+	margin-left: 100px;
+}
+/*footer부분에 들어갈 빠른 이동 메뉴의 위치를 지정하기 위한 class*/
+.footer_table {
+	margin-left: 1450px;
+	font-size: 16px;
+	text-align: center;
+	width: 300px;
+	color: rgba(255,255,255,1.00);
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: rgba(104,104,104,1.00);
+}
+/*지역 소개 페이지의 중앙 위치를 지정하기 위한 class*/
+.where_main {
+	height: 950px;
+	width: 1900px;
+}
+/*지역 소개 페이지 중앙의 양 사이드의 빈 공간의 크기를 지정하기 위한 class*/
+.whrere_side {
+	height: 900px;
+	width: 400px;
+	float: left;
+	text-align: center;
+	font-family: "나눔바른고딕", "나눔고딕", "나눔스퀘어";
+}
+/*지역 소개 페이지의 내용이 들어갈 위치와 배경색을 지정하기 위한 class*/
+.where_local {
+	background-color: rgba(255,220,221,1);
+	text-align: center;
+	float: left;
+	height: 840px;
+	width: 1100px;
+	padding-top: 60px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	font-family: "나눔바른고딕", "나눔고딕", "나눔스퀘어";
+}
+/*지역 소개 페이지 내용 중 좌측에 들어갈 이미지의 위치를 지정하기 위한 class*/
+.lo_img_left {
+	float: left;
+	height: 329px;
+	width: 330px;
+	margin-left: 35px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 1px rgba(153,130,158,1.00);
+	box-shadow: 5px 5px 1px rgba(153,130,158,1.00);
+}
+/*지역 소개 페이지 내용 중 중앙에 들어갈 이미지의 위치를 지정하기 위한 class*/
+.lo_img_mid {
+	float: left;
+	height: 329px;
+	width: 330px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 1px rgba(153,130,158,1.00);
+	box-shadow: 5px 5px 1px rgba(153,130,158,1.00);
+}
+/*지역 소개 페이지 내용 중 우측에 들어갈 이미지의 위치를 지정하기 위한 class*/
+.lo_img_right {
+	float: left;
+	height: 329px;
+	width: 330px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 35px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 1px rgba(153,130,158,1.00);
+	box-shadow: 5px 5px 1px rgba(153,130,158,1.00);
+}
+/*CSS 트랜지션이 적용 될 공간을 지정하기 위한 class*/
+.tran_img {
+	overflow: hidden;
+	position: relative;
+}
+/*CSS 트랜지션을 사용할 내용을 적을 공간을 지정하기 위한 class*/
+.lo_tran {
+	background-color: rgba(255,255,255,0.8);
+	margin: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	float: left;
+	height: 310px;
+	width: 310px;
+	overflow: hidden;
+	position: absolute;
+	top: 291px;
+	text-align: left;
+	font-size: 16px;
+	-webkit-transition: all 0.3s ease-in-out 0.1s;
+	-o-transition: all 0.3s ease-in-out 0.1s;
+	transition: all 0.3s ease-in-out 0.1s;
+}
+/*마우스를 올리기 이전부터 보일 공간을 강조하기 위한 class*/
+.title_bold {
+	color: rgba(0,140,231,1.00);
+	font-weight: bold;
+}
+.lo_tran:hover {
+	top: 0px;
+}
+/*지역 소개 페이지의 메인 부분의 하단에 들어갈 표의 위치를 지정하기 위한 class*/
+.lo_table {
+	font-family: "나눔바른고딕", "나눔고딕", "나눔스퀘어";
+	font-size: 16px;
+	text-align: center;
+	margin-left: 225px;
+	margin-top: 50px;
+	height: 225px;
+}
+/*링크가 걸린 글자의 색을 지정*/
+a:link {
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+a:hover {
+	text-decoration: underline;
+	color: rgba(255,255,255,1);
+}
+a:active {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}

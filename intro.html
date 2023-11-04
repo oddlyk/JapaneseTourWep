@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DoDo Japan</title>
+	<!--따로 저장해 둔 CSS 파일을 불러 옴-->
+<link href="main_css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!--헤더의 배경으로 이미지를 삽입하기 위해 사용-->
+<header class="heder_image">
+	<!--헤더에 타이틀을 적기 위해 사용-->
+  <div class="heder_capy">
+	<!--타이틀을 누를 시, 메인 페이지로 이동하도록 하기 위해 링크를 적용-->
+    <h1><a href="index.html">함께 떠나는 일본여행 DoDoJapan!</a></h1></div>
+</header>
+<nav class="nebi">
+	<!--네비게이션 바에 세개의 링크를 걸기 위해 각각의 div 사용-->
+  <div class="nebi_side">
+	<!--현재 화면에 해당하는 부분을 표시하기 위해 배경색을 지정하는 class를 사용-->
+    <div class="nebi_click"><a href="intro.html">회사소개</a></div>
+  </div>
+  <div class="nebi_main"><a href="index.html">메인</a></div>
+  <div class="nebi_side"><a href="where.html">모아보기</a></div>
+</nav>
+	<!--메인 화면에 들어갈 내용들의 위치와 크기를 지정하기 위해 사용-->
+<div class="main">
+	  <!--메인 좌측 공간의 크기를 지정하고 그 안에 이미지를 넣기 위한 div-->
+  <div class="main_side"><img src="img/main_left1.jpg" width="350" height="250" alt=""/><img src="img/main_left2.jpg" width="350" height="250" alt=""/><img src="img/main_left3.jpg" width="350" height="250" alt=""/><img src="img/main_left4.jpg" width="350" height="250" alt=""/></div>
+	  <!--메인 중앙에 들어갈 공간의 크기를 지정하기 위해 사용-->
+  <div class="main_mid"><img src="img/dodojapan.jpg" width="900" height="598" alt=""/> <!--회사의 추구하는 방향을 적은 이미지를 넣음-->
+	  <!--회사의 설명문을 넣기 위한 공간을 지정하기 위해 사용-->
+    <div id="company_exp">DoDoJapan은 고객님들의 성공적인 일본 여행을 만들어 드리기 위해 세워진 회사입니다.<br>
+      이웃나라 일본에 대한 다양한 지식을 습득하는 것을 돕고, 여행을 대비한 사전 지식을 얻을 수 있도록 돕는 것을 목표로 하고 있습니다.<br>
+      고객 여러분들이 DoDoJapan을 통해 더욱 행복한 하루를 보낼 수 있기를 기원합니다.<br>
+  <br>
+      - 대표 김묘경</div>
+	</div>
+  <div class="main_side">
+	  <!--메인 우측에 사진을 넣기 위해 사용-->
+  <div class="main_side_right_img"></div></div>
+</div>
+	<!--가장 하단의 footer 부분을 지정하기 위한 DIV-->
+<div class="footer">
+	<!--footer 부분에 회사 로고를 넣기 위해 사용-->
+  <div class="footer_img"><img src="img/company.jpg" width="150" height="110" alt=""/></div>
+	<!--footer 부분 우측에 빠른 이동을 위한  링크를 적은 표를 넣기 위해 사용-->
+  <div class="footer_table"><table width="300" border="0" cellspacing="2" cellpadding="1">
+   <tbody>
+    <tr>
+      <th colspan="2" scope="col"><strong>빠른 이동</strong></th>
+      </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="150"><a href="intro.html">회사소개</a></td>
+      <td width="150"><a href="where_sapporo.html">삿포로 소개</a></td>
+    </tr>
+    <tr>
+      <td><a href="index.html">메인</a></td>
+      <td><a href="where_tokyo.html">도쿄 소개</a></td>
+    </tr>
+    <tr>
+      <td><a href="where.html">모아보기</a></td>
+      <td><a href="where_osaka.html">오사카 소개</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	<!--footer 부분 하단에 페이지와 회사의 기타 정보를 입력하기 위해 사용-->
+  <div class="footer_imfo">Copyright 2020. DoDoJAPAN. All rights reserved <br> (139-774)서울시 노원구 화랑로 621 서울여자대학교 TEL.010-1234-5678</div>
+</div>
+</body>
+</html>

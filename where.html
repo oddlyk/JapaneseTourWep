@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DoDo Japan</title>
+	<!--따로 저장해 둔 CSS 파일을 불러 옴-->
+<link href="main_css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+	<!--롤오버이미지를 미리 불러오기 위함-->
+<body onLoad="MM_preloadImages('img/sapporo2.jpg','img/tokyo2.jpg','img/osaka2.jpg')">
+	<!--헤더의 배경으로 이미지를 삽입하기 위해 사용-->
+<header class="heder_image">
+	<!--헤더에 타이틀을 적기 위해 사용-->
+  <div class="heder_capy">
+	<!--타이틀을 누를 시, 메인 페이지로 이동하도록 하기 위해 링크를 적용-->
+    <h1><a href="index.html">함께 떠나는 일본여행 DoDoJapan!</a></h1></div>
+</header>
+<nav class="nebi">
+	<!--네비게이션 바에 세개의 링크를 걸기 위해 각각의 div 사용-->
+  <div class="nebi_side"><a href="intro.html">회사소개</a></div>
+  <div class="nebi_main"><a href="index.html">메인</a></div>
+  <div class="nebi_side">
+	  <!--현재 화면에 해당하는 부분을 표시하기 위해 배경색을 지정하는 class를 사용-->
+    <div class="nebi_click"><a href="where.html">모아보기</a></div>
+  </div>
+</nav>
+	<!--메인 화면에 들어갈 내용들의 위치와 크기를 지정하기 위해 사용-->
+<div class="main">
+	<!--메인 좌측 공간의 크기를 지정하고 그 안에 이미지를 넣기 위한 div-->
+  <div class="main_side"><img src="img/main_left1.jpg" width="350" height="250" alt=""/><img src="img/main_left2.jpg" width="350" height="250" alt=""/><img src="img/main_left3.jpg" width="350" height="250" alt=""/><img src="img/main_left4.jpg" width="350" height="250" alt=""/></div>
+	<!--메인 중앙에 들어갈 공간의 크기를 지정하기 위해 사용-->
+  <div class="main_mid">
+	  <!--삿포로 롤오버이미지의 위치를 지정하기 위해 새 클래스를 사용-->
+    <div id="main_where_img_left"><a href="where_sapporo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sapporo','','img/sapporo2.jpg',1)"><img src="img/sapporo1.jpg" alt="" width="340" height="320" id="Sapporo"></a></div>
+	  <!--도쿄 롤오버이미지의 위치를 지정하기 위해 새 클래스를 사용-->
+    <div id="main_where_img_mid"><a href="where_tokyo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tokyo','','img/tokyo2.jpg',1)"><img src="img/tokyo1.jpg" alt="" width="340" height="320" id="tokyo"></a></div>
+	  <!--오사카 롤오버이미지의 위치를 지정하기 위해 새 클래스를 사용-->
+	<div id="main_where_img_right"><a href="where_osaka.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('osaka','','img/osaka2.jpg',1)"><img src="img/osaka1.jpg" alt="" width="340" height="320" id="osaka"></a></div>
+  </div>
+  <div class="main_side">
+	  <!--메인 우측에 사진을 넣기 위해 사용-->
+    <div class="main_side_right_img"></div></div>
+</div>
+	<!--가장 하단의 footer 부분을 지정하기 위한 DIV-->
+<div class="footer">
+	<!--footer 부분에 회사 로고를 넣기 위해 사용-->
+  <div class="footer_img"><img src="img/company.jpg" width="150" height="110" alt=""/></div>
+	<!--footer 부분 우측에 빠른 이동을 위한 링크를 적은 표를 넣기 위해 사용-->
+  <div class="footer_table"><table width="300" border="0" cellspacing="2" cellpadding="1">
+   <tbody>
+    <tr>
+      <th colspan="2" scope="col"><strong>빠른 이동</strong></th>
+      </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="150"><a href="intro.html">회사소개</a></td>
+      <td width="150"><a href="where_sapporo.html">삿포로 소개</a></td>
+    </tr>
+    <tr>
+      <td><a href="index.html">메인</a></td>
+      <td><a href="where_tokyo.html">도쿄 소개</a></td>
+    </tr>
+    <tr>
+      <td><a href="where.html">모아보기</a></td>
+      <td><a href="where_osaka.html">오사카 소개</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	<!--footer 부분 하단에 페이지와 회사의 기타 정보를 입력하기 위해 사용-->
+  <div class="footer_imfo">Copyright 2020. DoDoJAPAN. All rights reserved <br> (139-774)서울시 노원구 화랑로 621 서울여자대학교 TEL.010-1234-5678</div>
+</div>
+</body>
+</html>
